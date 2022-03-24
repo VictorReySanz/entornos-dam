@@ -1,3 +1,7 @@
+/*
+ * Victor Rey Sanz
+ * 18/03/2022
+ */
 package juego;
 
 public class GuerreroFuerte extends Guerrero {
@@ -21,4 +25,4 @@ public class GuerreroFuerte extends Guerrero {
        return "Guerrero Fuerte";
    }
     
-}
+}}

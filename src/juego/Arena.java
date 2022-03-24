@@ -1,3 +1,7 @@
+/*
+ * Victor Rey Sanz
+ * 18/03/2022
+ */
 package juego;
 
 import java.util.ArrayList;
@@ -6,7 +10,6 @@ import java.util.Iterator;
 public class Arena {
     public static ArrayList<Integer> contadorGolpes = new ArrayList<Integer>();   
     
-    //public static int Lucha (Guerrero g, Mago m, ArrayList<Integer> contGol) {
     public static int Lucha (Personaje p1, Personaje p2, ArrayList<Integer> contGol) {
         Integer dano;
         int mlp1= p1.movimientoLucha();
@@ -36,8 +39,11 @@ public class Arena {
     
     public static void main(String[] args) {
       int danoLucha;
+      
       Guerrero gue1 = new Guerrero();
       imprimeNivelDeVida(gue1);
+      
+      System.out.println();
      
       Mago mag1 = new Mago();
       imprimeNivelDeVida(mag1);
@@ -82,8 +88,6 @@ public class Arena {
       System.out.println("Daño de la lucha 6 es " + danoLucha);
       imprimeNivelDeVida(mag1);
      
-      // Contador de golpes
-      // Declaramos el Iterador para recorrer el ArrayList
       System.out.print("\n** Contador de golpes: ");
       Iterator<Integer> iteContGolpes = contadorGolpes.iterator();
       while(iteContGolpes.hasNext()){
